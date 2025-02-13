@@ -245,7 +245,7 @@ nav{
     border-radius: 48px;
     background-color: #95B226;
     padding: 10px;
-    width: 150px;
+    width: 60%;
     color: white;
     position: relative;
     top: -27px;
@@ -337,13 +337,15 @@ footer{
     .stories-container{
         flex-direction: column;
     }
+    .extra-container{
+        grid-template-columns: 1fr 1fr;
+    }
     .card1{
         display: none;
     }
     footer{
         flex-direction: column;
         justify-content: flex-start;
-        width: 100%;
     }
     .about-container, .logo-container , .touch-container,.logo-box{
         width: 100%;
