@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+body{
+    padding: 20px 50px;
+}
+/* normal colors  */
+.orange{
+    color: orange;
+}
+.sky-blue{
+    color: skyblue;
+}
+.cyan{
+    color: #05D4DF;
+}
+.violet{
+    color: #5D58EF;
+}
+/* header part works  */
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.navlist{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1.25rem;
+}
+.navlist>li>a{
+    text-decoration: none;
+}
+.nav-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo-container>span{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.nav-button{
+    background-color: orange;
+    color: white;
+    width: 9rem;
+    border:none ;
+    border-radius: 0.75rem;
+}
+
