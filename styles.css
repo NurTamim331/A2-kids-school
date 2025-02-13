@@ -7,6 +7,7 @@
   }
 body{
     padding: 20px 50px;
+    background-image: url('resources/assets/bg.png');
 }
 /* normal colors  */
 .orange{
@@ -35,6 +36,8 @@ nav{
 }
 .navlist>li>a{
     text-decoration: none;
+    font-weight: bold;
+    font-size: 125%;
 }
 .nav-logo-container{
     display: flex;
@@ -52,4 +55,133 @@ nav{
     border:none ;
     border-radius: 0.75rem;
 }
+#nav-line{
+    padding: 2px;
+    color: yellow;
+    display: none;
+}
+#options-button{
+    display: none;
+}
+/* banner portion codes */
+.banner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.banner-container > img {
+    width: 60%;
+    height: 100%;
+    max-height: 500px;
+}
+.banner-element-box{
+    width: calc(100% - 10px);
+    padding: 2rem;
+}   
+.banner-element-box > h1{
+    font-weight:bold;
+    font-size: 5vh;
+}
 
+.banner-button{
+    background-color: black;
+    color: white;
+    border-radius: 0.75rem;
+    padding: 0.7rem 1.5rem;
+}
+/* curriculam part  */
+.curriculam-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.curriculam-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap:26px;
+    
+}
+.curriculam-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 12px;
+    width: 33.33%;
+    height: 100%;
+    border-radius: 18.88px;
+    flex-grow: 1;
+}
+.curriculam-card > img{
+    height: 40%;
+    width: auto;
+    object-fit: contain;
+}
+.kinder{
+    background-image: linear-gradient(to bottom, #DEF5FF , white);
+}
+.kinder > button{
+    padding: 20px;
+    background-color: white;
+    color: #64C8FF;
+    border: none;
+    font-weight: bolder;
+}
+.elementary{
+    background-image: linear-gradient(to bottom, #FFF4DC, white)
+}
+.elementary > button {
+    padding: 20px;
+    background-color: white;
+    color: #d8b365;
+    border: none;
+    font-weight: bolder;
+}
+.middle{
+    background-image: linear-gradient(to bottom, #F2E8FF,white);
+}
+.middle>button{
+    padding: 20px;
+    background-color: white;
+    color: #b097d0;
+    border: none;
+    font-weight: bolder;
+}
+
+@media screen and (max-width:576px){
+    .navlist{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    #options-button{
+        display:block;
+    }
+    /* work for banner  */
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-container > img {
+        width: 100%;
+        height: fit-content;
+    }
+    .banner-element-box{
+        width: 100%;
+        text-align: center;
+    }
+    /* curriculam box  */
+    .curriculam-box{
+        flex-direction: column;
+    }
+    .curriculam-card{
+        width: 100%;
+    }
+    
+    
+}
