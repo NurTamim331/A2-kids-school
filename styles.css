@@ -349,5 +349,8 @@ footer{
         width: 100%;
         justify-content: flex-start;
     }
+    .arrow-container{
+        display: none;
+    }
     
 }
